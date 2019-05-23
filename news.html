@@ -35,134 +35,133 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/logo.png" href="images/logo.png">
 
-	<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+      
+      /* Header/Blog Title */
 
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+      
+      
+      
+      /* Add a card effect for articles */
+      .card {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
 
-/* Header/Blog Title */
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-</style>
-	
 </head>
 <body>
 
 <header class="main_nav green">
 	<div class="container">
 		<div class="four columns">
-			<div class="logo"><a href="index.html"><img src="images/logo.png" height="140px" width="140px"/></a></div>
+			<div class="logo"><a href="/index.html"><img src="/images/logo.png" height="140px" width="140px"/></a></div>
 		</div>
 		
 		<div class="four columns">
 			<div>
 				<ul class="navigation">
 					
-					<li class="home"><a href="index.html">Home</a></li>
-					<li class="news"><a href="news.html">News</a></li>
-					<li class="contact"><a href="contact.html">Contact</a></li>
-					<li class="about"><a href="about.html">About</a></li>
+					<li class="home"><a href="/index.html">Home</a></li>
+					<li class="news"><a href="/news.html">News</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="four columns">
-			<div class="logo"><a href="https://www.goodreads.com/author/show/17756612.Brian_Shukwit"><img src="images/logo.png" height="140px" width="140px"/></a></div>
+			<div class="logo"><a href="https://www.goodreads.com/author/show/17756612.Brian_Shukwit"><img src="/images/logo.png" height="140px" width="140px"/></a></div>
 		</div>
 	</div>
 </header>
 
 <body>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
 
+    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Tales of Tikpo - News</h2>
+          <h5>Updates, May 23, 2019</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="card">
+          <h2>Keepers of Grimoire - News</h2>
+          <h5>Updates, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2 align="center">Rise of the Keepers!</h2>
+          <a href="https://tinyurl.com/y4fo6qff">
+              <img src="/images/keepers_of_grimoire.jpg" alt="KOG" style="width:250px;height:250px;border:0;">
+          </a>
+          <p align="center">Buy the 1st book of the Keepers of Grimoire series here!</p>
+        </div>
+        <div class="card">
+          <h2>Concordia</h2>
+          <a href="https://tinyurl.com/y4fo6qff">
+            <img src="/images/ted.jpg" alt="TOT" style="width:150px;height:250px;border:0;">
+        </a>
+        <p align="center">Buy the 1st book of the Tales of Tikpo series SOON!</p>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+    
 
-
-</body>
+    </body>
 
 <div class="row green">
 	<div class="container">
