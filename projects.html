@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Brian Shukwit | Author & Reader</title>
+  <meta name="description" content="Portfolio for  author and reader Brian Shukwit.">
+  <meta name="author" content="Brian Shukwit">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet"' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+  
+   <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/logo.png" href="images/logo.png">
+
+</head>
+<body>
+
+<header class="main_nav green">
+	<div class="container">
+		<div class="four columns">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" height="140px" width="140px"/></a></div>
+		</div>
+		
+		<div class="four columns">
+			<div>
+				<ul class="navigation">
+					
+					<li class="home"><a href="index.html">Home</a></li>
+					<li class="news"><a href="news.html">News</a></li>
+					<li class="contact"><a href="contact.html">Contact</a></li>
+					<li class="about"><a href="about.html">About</a></li>
+          <li class="project"><a href="/projects.html">School Projects</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="four columns">
+			<div class="logo"><a href="https://www.goodreads.com/author/show/17756612.Brian_Shukwit"><img src="images/logo.png" height="140px" width="140px"/></a></div>
+		</div>
+	</div>
+</header>
+
+
+
+<div class="container main">
+  
+  <hr>
+
+	<hr>
+	
+</div><!--Container-->
+
+<div class="row green">
+	<div class="container">
+		<div class="eight columns">
+			<h2 class="bio">Brian Shukwit</h2>
+			<p class="bio">Aspiring Novelist, Brian Shukwit: Imagination has always been one of my greatest tools. Escaping to far away worlds in an instant with just a thought. Creating places, friends, dangers, adventure and excitement all in the comfort of my own mind. The stories would build up so I just HAD to get them out – so I began writing them down. At an early age, they were not some genius material or prodigy writing but it was fun for me. So I kept doing it and doing it. Now in my 30’s I have had enough people tell me to put myself out there, so here I am. I write because I enjoy it. I write because the worlds I create need to escape. I don’t write for money or fame, I write so people can have a piece of my imagination to take with them. I hope you enjoy my works and I look forward to hearing your thoughts. Stay tuned for more imagination! </p>
+		</div>
+		<div class="four columns">
+			<img class="avatar" src="images/profile.jpg" />
+		</div>
+	</div>
+</div><!--Row Green-->
+	
+<footer>
+	<div class="container">
+
+		<div class="row twelve columns">
+			<p class="copyright">&copy; 2019 Brian Shukwit the Novelist. All Rights Reserved.</p>
+		</div>
+	</div>
+</footer>
+	
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+	 $('.image-link').magnificPopup({ 
+  type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function 
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});	</script>
+</body>
+</html>
