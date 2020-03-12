@@ -31,39 +31,9 @@ img {
 		</style>
 	</head>
 	<body>
-        
-		<div id="app">
-                <button v-on:click="lumos">Lumos</button>
-                <button v-on:click="incendio">Incendio</button>
-		<p v-html="wizard"></p>
+		<p> Enter if you dare... </p>
+			 <a href="brianshukwit.github.io/wizard.html> Wiz </a>
+			 <a href="brianshukwit.github.io/phase_one/index.html> Phase One Portfolio </a>
         </div>
-
-		<script>
-"use strict"
-// emojify returns the corresponding emoji image
-function emojify(name) {
-    var out = `<img src="emojis/` + name + `.png">`
-    return out
-}
-// cast returns a spell (function) that decorates the wizard
-function cast(emoji) {
-    if (!emoji) {
-        emoji = "¯\\_(ツ)_/¯"
-    }
-    return function (wizard) {
-        return emoji + wizard + emoji
-    }
-}
-var app = new Vue({
-    el: "#app",
-    data: {
-        wizard: emojify("wizard")
-    },
-    methods : {
-        lumos: cast(emojify("lumos")),
-        incendio: cast(emojify("incendio"))
-    }
-})
-        </script>
 	</body>
 </html>
