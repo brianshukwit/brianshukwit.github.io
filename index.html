@@ -32,21 +32,30 @@ img {
 	</head>
 	<body>
 		<div id="app">
-			<p v-text="message"></p>
+			<p v-html="wizard"></p>
 		</div>
 		<script>
 "use strict"
 // emojify returns the corresponding emoji image
 function emojify(name) {
-	var out = `<img src="emojis/` + name + `.png">`
-	return out
+    var out = `<img src="emojis/` + name + `.png">`
+    return out
+}
+// cast returns a spell (function) that decorates the wizard
+function cast(emoji) {
+    if (!emoji) {
+        emoji = "¯\\_(ツ)_/¯"
+    }
+    return function (wizard) {
+        return emoji + wizard + emoji
+    }
 }
 var app = new Vue({
     el: "#app",
     data: {
-        message: "Brian Shukwit - Site coming soon..."
+        wizard: emojify("wizard")
     }
 })
-		</script>
+        </script>
 	</body>
 </html>
