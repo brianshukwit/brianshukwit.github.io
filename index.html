@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.css">
+		<link rel="stylesheet" href="css/debug.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+		<style>
+/* resets */
+* { color: inherit; }
+input { font: inherit; border: unset; background: unset; }
+input:focus { outline: unset; }
+:root {
+	font: 1rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-seri;
+}
+#app {
+	display: flex;
+	flex-direction: column; justify-content: center; align-items: center;
+	width: 100vw; height: 100vh;
+	font-weight: 900; font-size: 8rem;
+	color: hsl(0, 0%, 100%);
+	background: hsl(240, 100%, 67%);
+}
+input { text-align: center; }
+img {
+	width: 8rem; height: 8rem;
+	vertical-align: calc(-0.12109375em);
+}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<p v-text="message"></p>
+		</div>
+		<script>
+"use strict"
+// emojify returns the corresponding emoji image
+function emojify(name) {
+	var out = `<img src="emojis/` + name + `.png">`
+	return out
+}
+var app = new Vue({
+    el: "#app",
+    data: {
+        message: "Brian Shukwit - Site coming soon..."
+    }
+})
+		</script>
+	</body>
+</html>
