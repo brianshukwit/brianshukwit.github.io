@@ -31,9 +31,15 @@ img {
 		</style>
 	</head>
 	<body>
+        
 		<div id="app">
-			<p v-html="wizard"></p>
-		</div>
+            <div id="spell">
+                <button v-on:click="lumos">Lumos</button>
+                <button v-on:click="incendio">Incendio</button>
+            </div>
+			    <p v-html="wizard"></p>
+        </div>
+
 		<script>
 "use strict"
 // emojify returns the corresponding emoji image
@@ -54,6 +60,10 @@ var app = new Vue({
     el: "#app",
     data: {
         wizard: emojify("wizard")
+    },
+    methods : {
+        lumos: cast(emojify("lumos")),
+        incendio: cast(emojify("incendio"))
     }
 })
         </script>
